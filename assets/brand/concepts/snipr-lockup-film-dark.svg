@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 480" width="1320" height="480">
+  <title>snipr logo lockup on dark — film cut</title>
+  <rect width="1320" height="480" rx="40" fill="#0A0A12"/>
+  <svg x="50" y="50" width="380" height="380" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF5AA8"/>
+      <stop offset="1" stop-color="#E0136C"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glyph" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#ECE6F4"/>
+    </linearGradient>
+    <filter id="drop" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#7A0638" flood-opacity="0.5"/>
+    </filter>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="30" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <clipPath id="tileClip"><rect x="52" y="40" width="920" height="920" rx="220"/></clipPath>
+  
+    <!-- strip split along jagged cut -->
+    <clipPath id="leftPiece"><polygon points="0,0 596,0 526,430 568,456 452,1024 0,1024"/></clipPath>
+    <clipPath id="rightPiece"><polygon points="612,0 1024,0 1024,1024 468,1024 584,456 542,430"/></clipPath>
+    <mask id="holes" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#FFFFFF"/>
+      <g fill="#000000"><rect x="322" y="298" width="38" height="30" rx="6"/><rect x="664" y="298" width="38" height="30" rx="6"/><rect x="322" y="356" width="38" height="30" rx="6"/><rect x="664" y="356" width="38" height="30" rx="6"/><rect x="322" y="414" width="38" height="30" rx="6"/><rect x="664" y="414" width="38" height="30" rx="6"/><rect x="322" y="472" width="38" height="30" rx="6"/><rect x="664" y="472" width="38" height="30" rx="6"/><rect x="322" y="530" width="38" height="30" rx="6"/><rect x="664" y="530" width="38" height="30" rx="6"/><rect x="322" y="588" width="38" height="30" rx="6"/><rect x="664" y="588" width="38" height="30" rx="6"/><rect x="322" y="646" width="38" height="30" rx="6"/><rect x="664" y="646" width="38" height="30" rx="6"/></g>
+    </mask>
+  </defs>
+
+  <!-- 3D tile: base extrusion, face, gloss, rim light -->
+  <g filter="url(#tileShadow)">
+    <rect x="52" y="72" width="920" height="920" rx="220" fill="#9E0C4E"/>
+    <rect x="52" y="40" width="920" height="920" rx="220" fill="url(#face)"/>
+  </g>
+  <g clip-path="url(#tileClip)">
+    <ellipse cx="512" cy="120" rx="560" ry="300" fill="url(#gloss)"/>
+  </g>
+  <rect x="58" y="46" width="908" height="908" rx="214" fill="none" stroke="url(#rim)" stroke-width="10"/>
+
+  <!-- glyph: film strip cut by scissors -->
+  <g filter="url(#drop)" transform="translate(512 500) scale(1.12) translate(-512 -500)">
+    <g clip-path="url(#leftPiece)" transform="translate(-16 10)">
+      <rect x="300" y="270" width="424" height="460" rx="28" fill="url(#glyph)" mask="url(#holes)"/>
+    </g>
+    <g clip-path="url(#rightPiece)" transform="translate(16 -10)">
+      <rect x="300" y="270" width="424" height="460" rx="28" fill="url(#glyph)" mask="url(#holes)"/>
+    </g>
+    <g stroke="#FFFFFF" fill="#FFFFFF">
+      <g fill="none" stroke-linecap="round">
+        <circle cx="432" cy="612" r="30" stroke-width="32"/>
+        <circle cx="500" cy="634" r="30" stroke-width="32"/>
+        <path d="M453 590 L588 392" stroke-width="36"/>
+        <path d="M502 603 L552 384" stroke-width="36"/>
+      </g>
+      <circle cx="518" cy="500" r="20"/>
+    </g>
+    <g stroke="#E0136C" fill="#E0136C">
+      <g fill="none" stroke-linecap="round">
+        <circle cx="432" cy="612" r="30" stroke-width="16"/>
+        <circle cx="500" cy="634" r="30" stroke-width="16"/>
+        <path d="M453 590 L588 392" stroke-width="20"/>
+        <path d="M502 603 L552 384" stroke-width="20"/>
+      </g>
+      <circle cx="518" cy="500" r="11"/>
+    </g>
+  </g>
+</svg>
+  <text x="470" y="318" font-family="Rubik, 'Arial Rounded MT Bold', 'Helvetica Neue', Arial, sans-serif" font-size="236" font-weight="800" letter-spacing="-6"><tspan fill="#F2F3FF">snip</tspan><tspan fill="#FF4FA0">r</tspan></text>
+  <text x="478" y="396" font-family="'JetBrains Mono', Menlo, monospace" font-size="34" fill="#9A9CC0" letter-spacing="6">CLIP · CUT · MEME</text>
+</svg>

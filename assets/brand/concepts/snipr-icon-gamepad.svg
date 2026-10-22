@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>snipr icon — S cut, d-pad, buttons</title>
+  <g transform="rotate(-10 512 512) translate(66 46) scale(0.9)">
+    <circle cx="512" cy="512" r="430" fill="#12838A"/>
+    <!-- S-shaped cut line ending at the scissor tips -->
+    <path d="M790 186 C660 118 445 155 445 300 C445 400 575 400 575 520 C575 640 510 680 440 690" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-dasharray="1 32"/>
+    <g fill="#FFFFFF">
+      <!-- face buttons, level with the D-pad -->
+      <circle cx="750" cy="376" r="54"/>
+      <circle cx="656" cy="470" r="54"/>
+      <circle cx="844" cy="470" r="54"/>
+      <circle cx="750" cy="564" r="54"/>
+      <!-- D-pad, left -->
+      <rect x="219" y="335" width="92" height="270" rx="20"/>
+      <rect x="130" y="424" width="270" height="92" rx="20"/>
+    </g>
+    <!-- scissors: ~1/4 outside the circle -->
+    <g transform="translate(283 763) rotate(-25)">
+      <g stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="-165" cy="-42" r="40" fill="none" stroke-width="54"/>
+        <circle cx="-165" cy="42" r="40" fill="none" stroke-width="54"/>
+        <line x1="-122" y1="-31" x2="0" y2="0" stroke-width="58"/>
+        <line x1="-122" y1="31" x2="0" y2="0" stroke-width="58"/>
+        <polygon points="5,-21 -5,21 173,44" stroke-width="36"/>
+        <polygon points="5,21 -5,-21 173,-44" stroke-width="36"/>
+      </g>
+      <g stroke="#F0237F" fill="#F0237F" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="-165" cy="-42" r="40" fill="none" stroke-width="30"/>
+        <circle cx="-165" cy="42" r="40" fill="none" stroke-width="30"/>
+        <line x1="-122" y1="-31" x2="0" y2="0" stroke-width="34"/>
+        <line x1="-122" y1="31" x2="0" y2="0" stroke-width="34"/>
+        <polygon points="5,-21 -5,21 173,44" stroke-width="12"/>
+        <polygon points="5,21 -5,-21 173,-44" stroke-width="12"/>
+      </g>
+      <circle cx="0" cy="0" r="11" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>
